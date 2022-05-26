@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!-- FA simple default response. -->
+	<topic name="Gas Saving Tips">
+		<category>
+			<pattern>GIVE ME A TIP</pattern>
+			<template>
+				<random>
+					<li>Installing a new, more efficient boiler can reduce the amount of gas needed to heat your house</li>
+					<li>Setting up monthly bill payments by direct debit is usually around 6% cheaper than other ways of paying!</li>
+					<li>Installing better house insulation can lead to reduced use of gas for heating. For more info, type "insulation"</li>
+					<li>
+						Controlling the temperature of central heating - By reducing the temperature by just one degree, the average household can save up to 10% per year.
+						Obviously, you can set the temperature even lower, but you should always keep yours and others comfort in mind.
+					</li>
+					<li>
+						Control radiator temperatures - If you set a radiator temperature too high, it will take much longer to heat up without providing much extra benefit.
+						By controlling the temeperatures of your radiators you are able to save gas whilst still staying warm.
+					</li>
+					<li>
+						Follow proper heating practices - You can keep your hose warm by following proper practices, such as moving furniture away from radiators or tucking curtains behind radiators.
+						Another good practice is to heat the house once during the evening, then avoid turning the heating on any later in the night. If you follow these practices, heat should stay in your house.
+					</li>
+					<li>Alternatives to using heating - There are ways you can go about heating your home or yourself without the need of heating such as a wood-burning fireplace or using a hot water bottle.</li>
+					<li>According to moneyhelper.org.uk, the best way to save money on gas is simply to use less, pay by direct debit (as it is usually cheaper and you physically can't really miss a payment with it) and make your home more eco-friendly.</li>
+					<li>Check what tariff you are on, fixed tariffs will stay the same each month but on a standard tariff, the cost of your bill can go up or down.</li>
+				</random>
+			</template>
+		</category>
+
+		<category>
+			<pattern>TIP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TIP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TIP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>TIP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>HELP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* HELP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>HELP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* HELP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+	</topic>
+</aiml>

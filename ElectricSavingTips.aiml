@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!-- FA simple default response. -->
+	<topic name ="Electricity Saving Tips">
+
+		<category>
+			<pattern>GIVE ME A TIP</pattern>
+			<template>
+				<random>
+					<li>LED bulbs are more efficient than other types of bulbs! Type "led bulbs" for more info</li>
+					<li>
+						Electronics that are on stand-by mode but are still switched on at the plug will use electricity.
+						Switch electronics off at the wall to save electricity!
+					</li>
+					<li>Smart switches can be used to turn off electronics without needing direct interaction from the user.</li>
+					<li>
+						The optimum temperature for a fridge is 3-5°C, and the optimum temperature for a freezer is -17 to -12°C.
+						Setting your appliances' temperatures to these values can reduce power usage and increase the lifespan.
+					</li>
+					<li>
+						Switch Supplier or Tariff - an expensive tariff or supplier will cost you more if you choose not to look for a cheaper supplier.
+						There are plenty of websites on the internet that can help you find cheaper energy suppliers and tariffs, such as moneysupermarket.com and switch.which.co.uk.
+						These sites help you to find the cheapest supplier and offer you a variety of companies to choose from and they allow you to compare these suppliers to your current one.
+					</li>
+					<li>
+						Check meters and heaters are set up properly - Make sure that your meters and heaters are set up properly so that you aren't wasting energy.
+						For instance, if the heaters are on during the day when no one is home, you end up wasting energy.
+					</li>
+					<li>
+						Invest into green solutions - although the initial cost will be high, installing green technology into your home such as solar panels or a biomass generator.
+						by installing this technology you lessen your reliance on the national grid, which makes your energy bills much cheaper. Not only do you lower your energy bills,
+						but you can also sell excess electricity and you avoid being screwed over by price hikes from suppliers.
+					</li>
+					<li>The cooling coil elements on the back of a fridge can get dirty. This reduces the efficiency of the fridge as it needs to work harder to produce the same amount of cooling. Cleaning the dirt and dust off the coils allows the fridge to work properly again.</li>
+					<li>The Sun can be used to provide both warmth and light in a household by opening the curtains to let Sun in. The reduces the need for using energy to light or heat the house.</li>
+					<li>If the weather is appropriate, clothes can be dried outside in the Sun, or inside in the heat. Doing this mitigates the need to use a tumble dryer to dry clothes, which uses electricity.</li>
+					<li>Update your heating system, new boilers are more energy efficient - this could save you up to £195!</li>
+				</random>
+			</template>
+		</category>
+
+		<category>
+			<pattern>TIP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TIP</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>TIP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TIP *</pattern>
+			<template>
+				<srai>GIVE ME A TIP</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>led bulbs</pattern>
+			<template>
+				LED bulbs can last for around 25,000 hours, whereas fluorescent bulbs can only last 8000 hours,
+				and incandescent bulbs around 1000 hours.
+				The upfront cost to buy an LED bulb is more than other types of bulbs, however they make up for it in the amount of energy they save.
+				The price of running a 60-Watt incandescent bulb for 20 years (6 hours per day) is around £290. An equivalent LED bulb for the same amount of time would only cost £59!
+			</template>
+		</category>
+	</topic>
+</aiml>
