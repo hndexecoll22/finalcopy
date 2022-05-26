@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <!-- Conditions-->
+  <category>
+    <pattern>lets talk about council support</pattern>
+    <template>
+      <think>
+        <set name="state">council</set>
+      </think>
+      <condition name="state" value="council">
+        <set name="topic">council</set>
+      </condition>
+    </template>
+  </category>
+
+
+  <topic name="council">
+    <category>
+      <pattern>*</pattern>
+      <template>I only know about the Household Support Fund and Welfare Assistance</template>
+    </category>
+    <category>
+      <pattern>I am struggling</pattern>
+      <template>
+        If you don’t have enough to live on, you might be able to get help from your local council or an interest-free loan from the government
+      </template>
+    </category>
+    <category>
+      <pattern>tell me more about help from council</pattern>
+      <template>
+        Your local council might give you vouchers to help pay for day-to-day essentials like:
+        a hot meal
+        second-hand furniture
+        household appliances, for example a cooke
+      </template>
+    </category>
+    <category>
+      <pattern>is there any loan available</pattern>
+      <template>
+        You might be able to get what's called a 'budgeting loan' for essentials like clothing or a washing machine if you claim certain benefits.
+        You might be eligible if you get:
+        Income Support
+        income-based Jobseeker’s Allowance
+        income-related Employment and Support Allowance
+        Pension Credit
+      </template>
+    </category>
+
+
+    <category>
+      <pattern>SUPPORT</pattern>
+      <template>
+        <li>Each local council will have different ways to support people who are struggling to pay energy bills.</li>
+        <li>However, there is support that any council can offer you to help you with your energy bills.</li>
+        <li>Any council offers a tax rebate for anyone in the council tax bands from A to D. you can get up to £150 back from the council which can be used to pay energy bills.</li>
+        <li>To find out more information visit: https://www.gov.uk/guidance/council-tax-rebate-factsheet#what-is-the-council-tax-rebate </li>
+        <li>The types of grants available vary from county to county and so it is important to know what you are elegible for.</li>
+        <li>To do this you can go to: https://www.simpleenergyadvice.org.uk/grants and enter your postcode.</li>
+      </template>
+    </category>
+
+    <category>
+      <pattern>* SUPPORT *</pattern>
+      <template>
+        <srai>SUPPORT</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>* SUPPORT</pattern>
+      <template>
+        <srai>SUPPORT</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>SUPPORT *</pattern>
+      <template>
+        <srai>SUPPORT</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>TAX BAND</pattern>
+      <template>
+        <li>Your council tax band can vary from property to property. The band is chosen based on the value of your non-commercial property.</li>
+        <li>To find out what band your property is in, visit: https://www.gov.uk/council-tax-bands </li>
+      </template>
+    </category>
+
+    <category>
+      <pattern>* TAX BAND</pattern>
+      <template>
+        <srai>TAX BAND</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>TAX BAND *</pattern>
+      <template>
+        <srai>TAX BAND</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>* TAX BAND *</pattern>
+      <template>
+        <srai>TAX BAND</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>
+        Can I get financial support from my local council
+      </pattern>
+      <template>
+        Local councils can provide suppport for you. They may be able to provide you with vouchers to help pay for day-to-day essentials such as hot meals, second-hand furniture and household appliances.
+      </template>
+    </category>
+
+    <category>
+      <pattern>
+        Is there any other financial support i can get from my council
+      </pattern>
+      <template>
+        You may be eligible for a Council Tax reduction, you have to apply to your local council. This is not available for people living in Northern Ireland.
+      </template>
+    </category>
+    
+
+    <category>
+      <pattern>tell me about welfare assistance</pattern>
+      <template>
+        Yes. <set name="welfare"></set>
+      </template>
+    </category>
+
+    <category>
+      <pattern>tell me about Household Support fund</pattern>
+      <template>
+        To be considered for Household Support, you must be:
+        over 16 years of age
+        living in Torbay
+        working age and receiving a welfare benefit
+        pension age and receiving pension credi
+      </template>
+    </category>
+
+
+
+
+    <topic name="welfare">
+      <category>
+        <pattern>*</pattern>
+        <template>
+          I only know about Welfare Assistance
+        </template>
+      </category>
+      <category>
+        <pattern>tell me more</pattern>
+        <template>Local Welfare Assistance is funded by the Council to help residents who are facing exceptional financial difficulty</template>
+      </category>
+      <category>
+        <pattern>
+          what are the requirements
+        </pattern>
+        <template>
+          live in Devon
+          are on a low income and in receipt of a means-tested benefit:
+          Housing Benefit, Universal Credit, ESA/JSA or Tax Credits (you may need to provide proof of this)
+          Clients who receive PIP/DLA must also be in receipt of a means-tested benefit
+          are referred by Mid Devon District Council
+          don’t have savings of more than £500
+          don’t have access to any other forms of assistance
+
+          In addition the above eligibility criteria, you will need to be in receipt of Universal Credit, Housing Benefit, ESA/JSA or Tax Credits. Referrals go to Turntable, a second hand furniture warehouse in Exeter
+          You can request up to five items of furniture, subject to availability, for £65 plus a £10 delivery charge. Large electrical appliances (no cooker availability) are priced separately according to age and quality, and you may buy only one appliance per six months
+          The total amount payable must be paid (cash preferred) on selection at the warehouse
+        </template>
+      </category>
+    </topic>
+
+
+
+    <topic name="household">
+      <category>
+        <pattern>*</pattern>
+        <template>I only know about Household Support Fund</template>
+      </category>
+      <category>
+        <pattern>I am stuggling to pay rent</pattern>
+        <template>
+          If Housing Benefit or Universal Credit doesn't cover all your rent and you need more money, you could make a claim for a discretionary housing payment (DHP). A DHP is extra money from your local council to help pay your rent.
+          There is extra funding available from the government’s Household Support Fund and this will enable us to give people on low incomes financial support to those who would otherwise struggle with energy bills and food.
+        </template>
+      </category>
+      <category>
+        <pattern>what is the requirements</pattern>
+        <template>
+          To be considered for Household Support, you must be:
+          over 16 years of age
+          living in Torbay
+          working age and receiving a welfare benefit
+          pension age and receiving pension credi
+        </template>
+      </category>
+    </topic>
+  </topic>
+
+</aiml>
