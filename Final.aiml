@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>
+			I am struggling to pay my energy bills can I get support from energy companies
+		</pattern>
+		<template>
+			Yes! Many energy suppliers offer grants to help pay off any energy debts also if you are born on or before 26th September 1955, you will be entitled to the Winter Fuel Payments.
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS WINTER FUEL PAYMENT</pattern>
+		<template>
+			The Winter Fuel Payment benefit is an annual sum of bewteen £100 - £300 that is given to people to help them pay heating bills.
+			People who are eligible must be born before or on 26 September 1955, and either:
+			Have lived in the UK for at least a day during 20 - 26 September 2021 (the 'qualifying week')
+			OR:
+			Live in Switzerland ort a European Economic Area (EEA) country AND
+			Have a genuine and sufficient link to the UK, for example having lived and worked in the UK, or having family in the UK.
+
+			This payment is not eligible for those who live in Cyprus, France, Gibraltar, Greece, Malta, Portugal, or Spain, as the average winter temperature is highter than the warmest region of the UK.
+
+			Those who are eligible will get their payment automatically if they either:
+			Get the State Pension, or
+			Get another social security benefit (but not Housing Benefit, Council Tax Reduction, Child Benefit, or Universal Credit)
+
+			Those who do not get either of those benefits, or live abroad, will need to manually make a claim themselves
+		</template>
+	</category>
+
+	<category>
+		<pattern>* WINTER FUEL PAYMENT *</pattern>
+		<template>
+			<srai>WHAT IS WINTER FUEL PAYMENT</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			When are winter fuel payments made
+		</pattern>
+		<template>
+			Most payments are made automatically in November and December. If you didn't recieve a payment please contact the Winter Fuel Payment Centre
+		</template>
+	</category>
+
+	<category>
+		<pattern>I am with *</pattern>
+		<template>British Gas, Scottish Power, Ovo, EON, EDF, and Bulb energy offer grants to their customers who are in debt to their energy supplier so that they can pay it off. British Gas especially offers grants that are available to everyone, not just their customers.</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<template>I can only understand certain things</template>
+	</category>
+	
+	<topic name ="Financial Support From Energy Companies">
+		<category>
+			<pattern>SUPPORT</pattern>
+			<template>
+				<li>Through the government, energy companies can offer grants to those that need help paying for electricity and gas bills.</li>
+				<li>Each supplier has a different way to go about this, and so here are the different approaches that can be taken:</li>
+				<li>British Gas Energy Trust: https://britishgasenergytrust.org.uk/grants-available/ </li>
+				<li>Scottish Power Hardship Fund: https://community.scottishpower.co.uk/t5/Extra-Help/Hardship-Fund/ta-p/53 </li>
+				<li>E.ON Energy Fund: https://www.eonenergy.com/more-for-your-home/energy-fund.html </li>
+				<li>EDF Energy Support Fund: https://www.edfenergy.com/for-home/help-centre/faq/extra-support-when-you-need-it?steps=23147#chapter-23146-6 </li>
+				<li>Bulb Energy Fund: https://citizensadviceplymouth.org.uk/bulb-energy/ </li>
+				<li>If you are unable to get support from any of these companies, you can apply for a grant from British Gas, regardless if you are a customer or not.</li>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* SUPPORT *</pattern>
+			<template>
+				<srai>SUPPORT</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* SUPPORT</pattern>
+			<template>
+				<srai>SUPPORT</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>SUPPORT *</pattern>
+			<template>
+				<srai>SUPPORT</srai>
+			</template>
+		</category>
+	</topic>
+	
+		
+		
+</aiml>
